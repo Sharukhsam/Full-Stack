@@ -1,0 +1,176 @@
+<html>
+    <head>
+        <title>PORTFOLIO</title>
+        <style>
+                img{
+                    border-radius: 50%;
+                    width:100px;
+                    height:100px;
+                } 
+                #div1{
+                    height:250px;
+                    background-color:rgb(33, 83, 85);
+                    border: 2px black solid;
+                    
+                }
+                #div2{
+                     height:400px;
+                     
+                     background-color:rgb(63, 92, 136);
+                     box-sizing:border-box;
+                     
+
+                     
+                     
+                } 
+                #div2 > #block1{
+                        float:left;
+                        margin:5px;
+                        padding: 5px;
+                }
+                #div2 > #block2{
+                        float:right;
+                        margin:5px;
+                        padding: 5px;
+                }
+                #block1{
+                     width:600px;
+                     height:300px;
+                      border:1px solid rgb(63, 92, 136);
+                      
+                    }
+
+                      #block2{
+                       width:600px;
+                        height:300px;
+                       border:1px solid rgb(63, 92, 136);
+                       
+                   }
+                #div3{
+                    height:400px;
+                    background-color:rgb(38, 168, 107);
+                    box-sizing:border-box;
+                }
+                #div3 > #block3{
+                        float:left;
+                        margin:5px;
+                        padding: 5px;
+                }
+                #div3 > #block4{
+                        float:right;
+                        margin:5px;
+                        padding: 5px;
+                }
+                #block3{
+                     width:600px;
+                     height:300px;
+                      border:1px solid rgb(38, 168, 107);
+                      
+                    }
+
+                      #block4{
+                       width:600px;
+                        height:300px;
+                       border:1px solid rgb(38, 168, 107);
+                       
+                   }
+       
+           </style>
+    </head>
+    
+    <body>
+        <div id="div1">
+            <br>
+            <center>
+          <img src="Profile\sameer.JPG" >
+          <h1>MOHAMMAD SAMEER</h1>
+          
+          <p>Full Stack Developer</p>
+        </center>
+        </div>
+        <div id="div2">
+            <br>
+            <center>
+               <ins> <b style="font-size:20px">ABOUT ME</b></ins>
+            </center>
+            <div id="block1">
+                    <p style="font-size:20px">I am a learner of Full-Stack Develoment. It has been a month in this cousre and presently doing well with the sessions conducted in Digital Lync. I have Graduated in the stream Mechanical Engineering. Later the interest on this is developed which brought me to Digital Lync.</p>
+                    <p style="font-size:20px">I love tlearning the new technologies in the present day world which is the reason of learning Full Stack Development. I'm looking for a position where i can take on collaborative team leadership responsibilities and gain experience</p>
+                    <p style="font-size:20px"> To work and build a career that offer challenges & growth with opportunities, where I can utilize my skills and knowledge efficiently.</p>
+                </div>
+            <div id="block2"> 
+                <p style="font-size:20px"><ins>HIGHLIGHTS</ins></p>
+                <ul style="font-size:20px">
+                        <li>Designed some of the webpages like :</li>
+                        <ul>
+                            <li>IPL Score card</li>
+                            <li>Registration Form</li>
+                            <li>Portfolio</li>
+                        </ul>
+                        <li>Certified as Auto technician by <b>TATA STRIVE EXTENSION CENTER</b>, Hyderabad.</li>
+                        <li>Attended a workshop on <b>HVAC</b> Organized by K.G. MECH TEAM Hyderabad.</li>
+                        <li>Exhibited a project at <b>“Project Expo”</b> in campus.</li>
+                        <li>Participated in one-month internship in<b> “DIESEL LOCOSHED”</b>, Kazipet.</li>
+                        <li>Participated in international conference on<b> “ICARIMMEM-2014”</b>.</li>
+                    </ul>
+            </div>
+            
+
+        </div>  
+    
+       
+    <div id="div3">
+        <br>
+            <center> 
+        <p><b style="font-size:20px"><ins>INTERESTS</ins></b></p>
+    </center>
+    <div id="block3">
+        <p style="font-size:20px">My Personal interets include:</p>
+        <ul style="font-size:20px">
+            <li><b>Deep Learning:</b>It's an exciting time for Full stack Development. I'm working through several online and offline classes and swap articles with colleauges.</li>
+            <li><b>Travelling:</b>Fond of wandering to the most amazing places on the earth. Been to some of the places but there are more awaiting my presence.  </li>
+            <li><b>Sports:</b></li> I like to play cricket in my free time and also to swim specially in summer.
+        </ul>
+    </div>
+    <div id="block4">
+      <p style="font-size:20px"><ins>OTHER THINGS</ins></p>
+      <ul style="font-size:20px">
+          <li>Active Member of SAE (Society of Automotive Engineers)</li>
+          <li>Just began my career as a Full Stack Developer.</li>
+      </ul>
+    </div>
+    </div>
+    <div id="div4">
+          <br>
+          <center><p><b><ins>CONTACT ME</ins></b></p>
+         &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="text" placeholder="Name" id="Name" size="40" maxlength="30">(max 30 character A-Z)<br><br>
+          <input type="text" placeholder="Email Id" id="email" name="emailid" size="40" maxlength="30"> <br><br>
+          <textarea  placeholder="Message" id="message" rows="10" cols="10" style="vertical-align:top; width:400px; height:100px; resize:none;"></textarea><br><br>
+          <button type="submit" class="send" onclick="send()">Send</button>
+        </center>
+        <br>
+        <br>
+        <center>
+        <p id="Name_msg"></p>
+        <p id="email_msg"></p>
+        <p id="message_msg"></p>
+        </center>
+        <script>
+            function send(){
+                event.preventDefault();
+                var Name=document.getElementById('Name');
+                var Email=document.getElementById('email');
+                var Message=document.getElementById('message');
+
+                document.getElementById('Name_msg').innerHTML=Name.value;
+                document.getElementById('email_msg').innerHTML=Email.value;
+                document.getElementById('message_msg').innerHTML=Message.value;
+                Name.value="";
+                Email.value="";
+                Message.value="";
+            }
+        </script> 
+    </div>
+    
+    </body>
+</html>
